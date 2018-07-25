@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Semantic UI Sandbox</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="ui container">
@@ -498,7 +499,39 @@
 
             <hr>
 
+            <!-- accordions -->
+            <div class="ui styled accordion">
+                <div class="title active">
+                    <i class="dropdown icon"></i>
+                    One
+                </div>
+                <div class="content active">
+                    <p class="transition visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio tempora assumenda eius tenetur, dolores sapiente dolorum! Molestiae tenetur aliquid quasi optio, neque omnis id animi ratione nam sunt odio quidem.</p>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Two
+                </div>
+                <div class="content">
+                    <p class="transition hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eveniet reprehenderit incidunt possimus corporis, quidem quibusdam, totam, hic beatae harum laboriosam cumque sed! Doloribus reiciendis similique sit, cumque a praesentium.</p>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Three
+                </div>
+                <div class="content">
+                    <p class="transition hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam maiores vitae consequuntur aliquam sunt explicabo, dolores et excepturi suscipit odio est, facere neque amet deserunt tempore! Nesciunt veritatis dignissimos deserunt.</p>
+                    <p class="transition hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consequatur pariatur quasi culpa, libero animi et adipisci perspiciatis velit aliquam voluptatum, fugit quam voluptates ducimus eius ipsa facilis asperiores! Vitae.</p>
+                </div>
+            </div>
+
+            <hr>
+
         </div>
+
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+        <script type="text/javascript">
+            $('.ui.accordion').accordion()
+        </script>
     </body>
 </html>
